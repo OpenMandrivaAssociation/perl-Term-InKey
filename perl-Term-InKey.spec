@@ -3,7 +3,7 @@
 Summary:	Term::InKey - Perl extension for clearing the screen and receiving a keystroke
 Name:		perl-%{module}
 Version:	1.04
-Release: %mkrel 4
+Release: %mkrel 6
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
