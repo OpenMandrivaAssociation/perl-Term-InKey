@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	5
 
 Summary:	Term::InKey - Perl extension for clearing the screen and receiving a keystroke
 License:	GPL+ or Artistic
