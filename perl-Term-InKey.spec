@@ -2,14 +2,14 @@
 %define upstream_version 1.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Term::InKey - Perl extension for clearing the screen and receiving a keystroke
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Term/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Term-InKey
+Source0:	https://cpan.metacpan.org/authors/id/R/RA/RAZINF/Term-InKey-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
