@@ -1,15 +1,13 @@
 %define upstream_name    Term-InKey
-%define upstream_version 1.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	1.04
+Release:	7
 
 Summary:	Term::InKey - Perl extension for clearing the screen and receiving a keystroke
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Term-InKey
-Source0:	https://cpan.metacpan.org/authors/id/R/RA/RAZINF/Term-InKey-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RA/RAZINF/Term-InKey-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -22,7 +20,7 @@ Term::ReadKey, it does not contain XSUB code and can be easily
 installed on Windows boxes.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -50,9 +48,7 @@ rm -f %{buildroot}%{perl_vendorlib}/Term/demo.pl
 
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 1.40.0-1mdv2010.0
 + Revision: 405539
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.04-6mdv2009.0
+- rebuild using %1.04 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.04-6mdv2009.0
 + Revision: 241960
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
